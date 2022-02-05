@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+  rel="stylesheet"/>
+<style>
+        #lbname,#lbadd,#lbemail,#lbpass 
+            {
+                width: 30%;
+                position: absolute;
+                left: 30%;
+                text-align: left;
+            }
+
+		#name,#address,#email,#password{
+			position: absolute;
+            right: 40%;
+            text-align: left;
+		}
+		
+         input {
+                border-radius: 10px;
+            }
+
+        .align-btn{
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            margin-left: 10%;
+            margin-bottom: 10px;
+        }
+        #error1, #erroe2, #error3{
+                width: 30%;
+                margin-right: 75%;
+                text-align: right;
+                margin-right: 10%;
+                color: red;
+                font-style: italic;
+            }
+</style>
+	<title>TECHNOVID</title>
+</head>
+<body style="background-image: conic-gradient(#c7c278 70deg, #d69c2f 0 235deg, #f7bf6c 0);color: white;">
+	<script type="text/javascript" src="CAT2_JS.js"></script>
+<div class="all">
+
+<div class="row mt-5">
+	<h1 class="col-12" style="margin-bottom: 2%;" align="center"><b><strong>Gateways 2022- TECHNOVID</strong></b></h1>
+</div>
+<form onsubmit="return validate()" action="#">
+	<div class="row mt-5">
+		
+		<div class=" col-4"></div>
+		<div class=" col-4" align="center">
+		<label class="form-label" style="color:white" id="lbname"><b> NAME</b></label>
+		<input type="text" placeholder="Enter your Name" id="name" onkeypress="return invalid_name(event)"/>
+        <label id="erruser" style="color: red; visibility: hidden;">Invalid User</label>
+	    </div>
+    <div class="col-4" align="center">
+    </div>
+
+	
+	<div class="row mt-5">
+		<div class="col-4"></div>
+		<div class="col-4" align="center">
+		<label class="form-label" style="color:white" id="lbemail"><b> EMAIL </b></label>
+		<input type="text" placeholder="Enter Email" id="email"/>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <div class="row mt-5">
+
+    <div class=" col-4"></div>
+	    <div class="col-4" align="center">
+		<label class="form-label" style="color:white" id="lbadd"><b> BRANCH     </b></label>
+		<input type="text" placeholder="Enter Branch" id="branch"/>
+		</div>
+	    <div class="col-4"></div>
+	</div>
+
+	<div class="row mt-5">
+
+		<div class=" col-4"></div>
+			<div class="col-4" align="center">
+			<label class="form-label" style="color:white" id="lbadd"><b> University Name </b></label>
+			<input type="text" placeholder="Enter University" id="university"/>
+			</div>
+			<div class="col-4"></div>
+		</div>
+
+		<div class="row mt-5">
+
+			<div class=" col-4"></div>
+				<div class="col-4" align="center">
+				<label class="form-label" style="color:white" id="lbadd"><b> State </b></label>
+				<input type="text" placeholder="Enter State" id="state"/>
+			</div>
+				<div class="col-4"></div>
+		</div>
+	
+			<div class="row mt-5">
+
+				<div class=" col-4"></div>
+					<div class="col-4" align="center">
+					<label class="form-label" style="color:white" id="lbadd"><b> Address </b></label>
+					<input type="text" placeholder="Enter Address" id="address"/>
+				</div>
+			<div class="col-4"></div>
+			</div>
+
+			<div class="row mt-5">
+
+				<div class=" col-4"></div>
+					<div class="col-4" align="center">
+					<label class="form-label" style="color:white" id="lbadd"><b> Age </b></label>
+					<input type="number" placeholder="Enter Age" id="age"/>
+				</div>
+			<div class="col-4"></div>
+			</div>
+
+			<div class="row mt-5">
+
+				<div class=" col-4"></div>
+					<div class="col-4" align="center">
+					<label class="form-label" style="color:white" id="lbadd"><b> Phone Number </b></label>
+					<input type="number" placeholder="Enter number" id="phone"/>
+				</div>
+			<div class="col-4"></div>
+			</div>
+
+			<div class="row mt-5">
+
+				<div class=" col-4"></div>
+					<div class="col-4" align="center">
+					<label class="form-label" style="color:white" id="lbadd"><b> Username </b></label>
+					<input type="number" placeholder="Enter Username" id="username"/>
+				</div>
+			<div class="col-4"></div>
+			</div>
+
+    <div class="row mt-5">
+	
+        <div class="col-4"></div>
+            <div class="col-4" style="text-align: center;">
+                <label class="form-label" style="color:white;" id="lbpass"><b> PASSWORD </b></label>
+                <input type="password" placeholder="Enter Password" id="password" onkeydown="check_password()"/><br/><br/>
+                <span id="error1"></span><br/>
+				<span id="error2"></span><br/>
+                <span id="error3"></span><br/>
+            </div>
+        <div class="col-4"></div>
+	</div>
+
+	</div>
+<div class="row mt-3">
+ 	<div class="col-2"></div>
+ 	<div class="col-8" style="text-align: center">
+ 		<label ><h6 ><b>ADDITIONAL FEEDBACK </b></h6></label>
+ 		<input type="textarea" id="text" name="additional" class="form-control"/>
+ 		<span id="messtext"></span>
+ 	</div>
+ 	<div class="col-2"></div>
+ </div>
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-4"></div>
+	<div class="col-2 align-btn">
+		<button class="btn-danger rounded" id="submit" style="width:70%;height: 100%;" onclick="setCookies()">SUBMIT</button>
+		<br/>
+		<input type="reset" value="Reset" style="background-color: red; color: white" />	
+	</div>
+	<div class="col-5"></div>
+    
+</div>
+</form>
+</body>
+</html>
