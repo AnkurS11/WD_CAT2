@@ -2,32 +2,31 @@
 <CHRIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="CAT2_XSD.xsd">
   
-  <COMPUTER-SCIENCE>
-  <STU-NAME>Ankur Sharma</STU_NAME>
-  <STU-UNIVERSITY>CHRIST</STU-UNIVERSITY>
-  <STU-PHONE>234567890</STU-PHONE>
-  <STU-EMAIL>Ankur@GMAIL>COM</STU-EMAIL>
-  </COMPUTER-SCIENCE>
+<ComputerScience>
+    <Student_name>Harshita Singh</Student_name>
+    <Student_university>Christ university</Student_university>
+    <Student_phone>5687457889</Student_phone>
+    <Student_email>harshit@gmail.com</Student_email>
+</ComputerScience>
+<ComputerScience>
+    <Student_name>Ruby Singh</Student_name>
+    <Student_university>VIT university</Student_university>
+    <Student_phone>5687457834</Student_phone>
+    <Student_email>rubi@gmail.com</Student_email>
+</ComputerScience>
+  
+  <ComputerScience>
+    <Student_name>Ranu Singh</Student_name>
+    <Student_university>BIT university</Student_university>
+    <Student_phone>5687457459</Student_phone>
+    <Student_email>ranu@gmail.com</Student_email>
+</ComputerScience>
 
-  <COMPUTER-SCIENCE>
-  <STU-NAME>Adarsh Verma</STU_NAME>
-  <STU-UNIVERSITY>JAIN</STU-UNIVERSITY>
-  <STU-PHONE>1234567890</STU-PHONE>
-  <STU-EMAIL>adarsh@GMAIL>COM</STU-EMAIL>
-  </COMPUTER-SCIENCE>
-
-  <COMPUTER-SCIENCE>
-  <STU-NAME>Priyanka Yadav</STU_NAME>
-  <STU-UNIVERSITY>CHRIST</STU-UNIVERSITY>
-  <STU-PHONE>7834567890</STU-PHONE>
-  <STU-EMAIL>priyanka@GMAIL>COM</STU-EMAIL>
-  </COMPUTER-SCIENCE>
-
-  <COMPUTER-SCIENCE>
-  <STU-NAME>Pradeep</STU_NAME>
-  <STU-UNIVERSITY>JSS</STU-UNIVERSITY>
-  <STU-PHONE>7494567890</STU-PHONE>
-  <STU-EMAIL>pradeep@GMAIL>COM</STU-EMAIL>
-  </COMPUTER-SCIENCE>
+<ComputerScience>
+    <Student_name>Ankur</Student_name>
+    <Student_university>CHRIST university</Student_university>
+    <Student_phone>5623457459</Student_phone>
+    <Student_email>ankur@gmail.com</Student_email>
+</ComputerScience>
 
 </CHRIST>

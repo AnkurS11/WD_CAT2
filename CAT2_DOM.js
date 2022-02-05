@@ -1,3 +1,5 @@
+/--JS for DOM Parser--/
+
 var xmlDoc
 var xmlFile ='CAT_XML.xml'
 
@@ -25,16 +27,14 @@ function loadXML()
 function displayTable()
 {
     var i;
-    var table = "<tr><th>Student Name</th><th>University Name</th></tr>";
+    var table = "<tr><th>Student Name</th><th>Student University</th></tr>"
 
-    var x = xmlDoc.getElementsByTagName("COMPUTER-SCIENCE");
+    var x = xmlDoc.getElementsByTagName("ComputerScience")
     for (i = 0; i < x.length; i++)
     {
         table += "<tr><td>" +
-            x[i].getElementsByTagName("STU-NAME")[0].childNodes[0].nodeValue + "</td><td>" +
-            x[i].getElementsByTagName("STU-UNIVERSITY")[0].childNodes[0].nodeValue + "</td><td><tr>";
+            x[i].getElementsByTagName("Student_name")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("Student_university")[0].childNodes[0].nodeValue + "</td><td></tr>";
     }
     document.getElementById("table").innerHTML = table
 }
-
-

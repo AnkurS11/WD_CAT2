@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cat2:schema xmlns:cat2="http://www.w3.org/2001/XMLSchema">
-   <cat2:element name="CHRIST" type="Students" />
-   <cat2:complexType name="Students">
-      <cat2:sequence>
-         <cat2:element name="COMPUTER-SCIENCE" type="stud" minOccurs="1" maxOccurs="unbounded" />
-      </cat2:sequence>
-   </cat2:complexType>
-   
-   <cat2:complexType name="stud">
-      <cat2:sequence>
-         <cat2:element name="STU-NAME" type="cat2:string" />
-         <cat2:element name="STU-UNIVERSITY" type="cat2:string" />
-         <cat2:element name="STU-PHONE" type="cat2:date" />
-         <cat2:element name="STU-EMAIL" type="cat2:string" />
-      </cat2:sequence>
+   <cat2:element name="ComputerScience" maxOccurs="unbounded">
+					<cat2:complexType>
+						<cat2:sequence>
+						
+							<cat2:element name="Student_name" type="cat2:string"></cat2:element>
+							<cat2:element name="Student_university" type="cat2:string"></cat2:element>
+							<cat2:element name="Student_phone" type="cat2:integer"></cat2:element>
+							<cat2:element name="Student_email" type="cat2:string"></cat2:element>
+							
+						</cat2:sequence>
+					</cat2:complexType>
+				</cat2:element>
+			</cat2:sequence>
    </cat2:complexType>
 
 </cat2:schema>
