@@ -34,7 +34,7 @@ function displayTable()
     {
         table += "<tr><td>" +
             x[i].getElementsByTagName("Student_name")[0].childNodes[0].nodeValue + "</td><td>" +
-            x[i].getElementsByTagName("Student_university")[0].childNodes[0].nodeValue + "</td><td></tr>";
+            x[i].getElementsByTagName("Student_university")[0].childNodes[0].nodeValue + "</td></tr>";
     }
     document.getElementById("table").innerHTML = table
 }
