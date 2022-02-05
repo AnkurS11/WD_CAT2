@@ -45,7 +45,7 @@
 </style>
 	<title>TECHNOVID</title>
 </head>
-<body style="background-image: conic-gradient(#c7c278 70deg, #d69c2f 0 235deg, #f7bf6c 0);color: white;">
+<body style="background-image: conic-gradient(#c7c278 70deg, #d69c2f 0 235deg, #f7bf6c 0);color: white;" onload="loadXML()">
 	<script type="text/javascript" src="CAT2_JS.js"></script>
 <div class="all">
 
@@ -158,16 +158,7 @@
 	</div>
 
 	</div>
-<div class="row mt-3">
- 	<div class="col-2"></div>
- 	<div class="col-8" style="text-align: center">
- 		<label ><h6 ><b>ADDITIONAL FEEDBACK </b></h6></label>
- 		<input type="textarea" id="text" name="additional" class="form-control"/>
- 		<span id="messtext"></span>
- 	</div>
- 	<div class="col-2"></div>
- </div>
-	</div>
+
 </div>
 
 <div class="row mt-3">
@@ -175,11 +166,18 @@
 	<div class="col-2 align-btn">
 		<button class="btn-danger rounded" id="submit" style="width:70%;height: 100%;" onclick="setCookies()">SUBMIT</button>
 		<br/>
+		<button class="btn-danger rounded" id="save" style="width:70%;height: 100%;" onclick="displayTable()">SAVE</button>
+		<br/>
 		<input type="reset" value="Reset" style="background-color: red; color: white" />	
 	</div>
 	<div class="col-5"></div>
     
 </div>
 </form>
+
+<table id="table"></table>
+
+<script src="CAT2_DOM.js"></script>
+
 </body>
 </html>
